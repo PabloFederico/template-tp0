@@ -5,14 +5,10 @@ import java.util.List;
 
 public class RegExGenerator {
     // TODO: Uncomment this field
-    //private int maxLength;
+    private int maxLength;
 
-    //public RegExGenerator(int maxLength) {
-    //    this.maxLength = maxLength;
-    //}
-    public void main(){
-
-        System.out.print("Poli");
+    public RegExGenerator(int maxLength) {
+        this.maxLength = maxLength;
     }
 
     // TODO: Uncomment parameters
@@ -25,4 +21,7 @@ public class RegExGenerator {
             }
         };
     }
+
+
+
 }
