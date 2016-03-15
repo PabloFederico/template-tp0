@@ -10,6 +10,10 @@ public class RegExGenerator {
     //public RegExGenerator(int maxLength) {
     //    this.maxLength = maxLength;
     //}
+    public void main(){
+
+        System.out.print("Poli");
+    }
 
     // TODO: Uncomment parameters
     public List<String> generate(/*String regEx, int numberOfResults*/) {
