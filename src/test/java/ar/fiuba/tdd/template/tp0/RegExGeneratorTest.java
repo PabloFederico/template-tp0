@@ -63,9 +63,10 @@ public class RegExGeneratorTest {
         assertTrue(validate("[abc]+", 1));
     }
     */
-        // TODO: Add more tests!!!
-@Test
-public void testAnyCharacter() {
-    assertTrue(6<7);
-}
-}
+    // TODO: Add more tests!!!
+    //Pongo este test para probar TRAVIS.CI
+    @Test
+    public void testAnyCharacter() {
+            assertTrue(6<7);
+        }
+    }
