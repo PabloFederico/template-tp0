@@ -65,5 +65,16 @@ public class RegExGeneratorTest {
         assertTrue(validate("[abc]+", 1));
     }
 
+    //My Tests
+    @Test
+    public void test1() {
+        assertTrue(validate("p.blo", 1));
+    }
+
+    @Test
+    public void test2() {
+        assertTrue(validate("p.*", 1));
+    }
+
 
 }
