@@ -2,32 +2,34 @@ package ar.fiuba.tdd.template.tp0;
 
 import org.junit.Test;
 
-//import java.util.List;
-//import java.util.regex.Matcher;
-//import java.util.regex.Pattern;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertTrue;
 
 public class RegExGeneratorTest {
-/*
+
     private boolean validate(String regEx, int numberOfResults) {
-        RegExGenerator generator = new RegExGenerator();
-        // TODO: Uncomment parameters
-        List<String> results = generator.generate(/*regEx, numberOfResults*//*);
+
+        int maxLength = 10;
+        RegExGenerator generator = new RegExGenerator(maxLength);
+        List<String> results;
+
+            results = generator.generate(regEx, numberOfResults);
+
         // force matching the beginning and the end of the strings
-  /*    Pattern pattern = Pattern.compile("^" + regEx + "$");
+        Pattern pattern = Pattern.compile("^" + regEx + "$", Pattern.DOTALL);
         return results
-                .stream()
-                .reduce(true,
-                    (acc, item) -> {
-                        Matcher matcher = pattern.matcher(item);
-                        return acc && matcher.find();
-                    },
-                    (item1, item2) -> item1 && item2);
+                .stream().reduce(true,
+                        (acc, item) -> {
+                            Matcher matcher = pattern.matcher(item);
+                            return acc && matcher.find();
+                        },
+                        (item1, item2) -> item1 && item2);
     }
 
-  */  //TODO: Uncomment these tests
-    /*
+
     @Test
     public void testAnyCharacter() {
         assertTrue(validate(".", 1));
@@ -62,10 +64,6 @@ public class RegExGeneratorTest {
     public void testCharacterSetWithQuantifiers() {
         assertTrue(validate("[abc]+", 1));
     }
-    */
-    // TODO: Add more tests!!
-    @Test
-    public void testAnyCharacter() {
-            assertTrue(6<7);
-        }
-    }
+
+
+}
