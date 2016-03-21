@@ -76,5 +76,34 @@ public class RegExGeneratorTest {
         assertTrue(validate("p.*", 1));
     }
 
+    @Test
+    public void test3() {
+        assertTrue(validate("a?b*c", 1));
+    }
+
+    @Test
+    public void test4() {
+        assertTrue(validate("..a+", 1));
+    }
+
+    @Test
+    public void test5() {
+        assertTrue(validate("td[d]", 1));
+    }
+
+    @Test
+    public void test6() { assertTrue(validate("a+b?cde", 1)); }
+
+    @Test
+    public void test7() {
+        assertTrue(validate("a[bc]d", 1));
+    }
+
+    @Test
+    public void test8() {
+        assertTrue(validate(".a*b?", 1));
+    }
+
+
 
 }
